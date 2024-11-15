@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style_profile.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i>🏠 Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profile-container">
+        <!-- Profile Background Image -->
+        <div id="profile-background">
+            <img id="background-img" src="default-background.jpg" alt="Profile Background">
+        </div>
+
+        <!-- Profile Picture -->
+        <div id="profile-picture">
+            <img id="profile-img" src="default-profile-pic.jpg" alt="Profile Picture">
+        </div>
+
+        <!-- Upload Buttons -->
+        <div id="upload-buttons">
+            <button id="upload-profile-btn">Upload Profile Image</button>
+            <input type="file" id="profile-img-input" accept="image/*" style="display: none;">
+            
+            <button id="upload-background-btn">Upload Background Image</button>
+            <input type="file" id="background-img-input" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Profile Info (Username, Bio, Edit Bio) -->
+        <div id="profile-info">
+            <h2 id="username"></h2>
+            <p id="bio"></p>
+            <button id="edit-bio-btn">Edit Bio</button>
+            <textarea id="bio-input" style="display:none;"></textarea>
+            <button id="save-bio-btn" style="display:none;">Save Bio</button>
+        </div>
+
+        <!-- User's Posts -->
+        <div id="profile-posts-container">
+            <h3>Your Posts:</h3>
+            <div id="posts-list">
+                <!-- Posts will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #f7f9fa;
+    color: #14171a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Post and Comment Container */
+#post-container, #comment-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+/* Post Styling */
+.post {
+    font-size: 18px;
+    color: #14171a;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post small {
+    font-size: 14px;
+    color: #657786;
+}
+
+/* Comment Section Styling */
+.comment {
+    font-size: 16px;
+    color: #14171a;
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #e1e8ed;
+    line-height: 1.5;
+}
+
+/* Reply Section Styling */
+.reply {
+    font-size: 14px;
+    color: #657786;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border-left: 2px dashed #e1e8ed;
+    line-height: 1.5;
+}
+
+/* Comment Input Styling */
+#comment-input {
+    width: 100%;
+    max-width: 580px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #e1e8ed;
+    background-color: #f0f0f0;
+    color: #14171a;
+    resize: vertical;
+}
+
+#comment-input:focus {
+    outline: none;
+    border-color: #1da1f2;
+    background-color: #ffffff;
+}
+
+/* Post Comment Button Styling */
+button {
+    width: 10%;
+    max-width: 580px;
+    background-color: #1da1f2;
+    color: white;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c85d0;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Reply Button and Icon Styling */
+.reply-button {
+    background: none;
+    border: none;
+    color: #1da1f2;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.reply-button:hover {
+    color: #0c85d0;
+}
+
+/* Icon for reply, like, and other actions (if needed) */
+.reply-button i {
+    margin-right: 8px;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 480px) {
+    #post-container, #comment-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button, #comment-input {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/* Navbar Styles */
+#navbar {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Right side: User Status */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px; /* Align to the right */
+}
+
+#user-status {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#user-status i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* Centered Search Bar and Button */
+#search-bar {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 300px; /* Adjust width to your liking */
+}
+
+#search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0d8ac0;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin-bottom: 15px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #1DA1F2;
+    font-size: 18px;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: #0d8ac0;
+}

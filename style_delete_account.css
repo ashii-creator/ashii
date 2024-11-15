@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F8FA;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1DA1F2;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li a:hover {
+    background-color: #198BB9;
+    border-radius: 5px;
+}
+
+/* Main Content Area */
+h2 {
+    margin-left: 270px;
+    padding-top: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    margin-left: 270px;
+    font-size: 18px;
+    color: #333;
+}
+
+strong {
+    color: #1DA1F2;
+}
+
+/* Delete Account Button */
+#delete-account-btn {
+    margin-left: 270px;
+    background-color: #E0245E;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#delete-account-btn:hover {
+    background-color: #D10F4A;
+}
+
+#delete-account-btn:active {
+    background-color: #B20839;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    h2, p, #delete-account-btn {
+        margin-left: 220px; /* Adjust for smaller sidebar */
+    }
+}

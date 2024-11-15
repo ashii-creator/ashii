@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section</title>
+    <script defer src="comment_section.js"></script>
+    <link rel="stylesheet" href="style_comment_section.css">
+    <style>
+        /* Styles */
+        .post { font-size: 18px; margin-bottom: 10px; }
+        .comment { font-size: 16px; margin-top: 15px; padding-left: 10px; border-left: 2px solid #ccc; }
+        .reply { font-size: 14px; color: #555; margin-top: 5px; margin-left: 20px; padding-left: 10px; border-left: 1px dashed #aaa; }
+        .reply-input { display: block; margin-top: 10px; margin-left: 20px; width: 80%; }
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i>🏠 Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Post and Comment Containers -->
+    <div id="post-container"></div>
+    <hr>
+    <div id="comment-container">
+        <!-- Sample comment for demonstration -->
+        <div class="comment">
+            <a href="profile.html?username=johndoe" class="comment-username">johndoe</a>
+            <p>This is a comment text.</p>
+        </div>
+        <div class="reply">
+            <a href="profile.html?username=janedoe" class="reply-username">janedoe</a>
+            <p>This is a reply text.</p>
+        </div>
+    </div>
+
+    <textarea id="comment-input" placeholder="Write your comment here..."></textarea>
+    <button onclick="postComment()">Post Comment</button>
+</body>
+</html>

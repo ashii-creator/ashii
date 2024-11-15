@@ -1,0 +1,89 @@
+/* General reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.register-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #1da1f2;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1da1f2;
+    box-shadow: 0 0 5px rgba(29, 161, 242, 0.5);
+}
+
+/* Button style */
+button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0c85d0;
+}
+
+/* Link styles */
+p {
+    font-size: 14px;
+    color: #657786;
+}
+
+a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

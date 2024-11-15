@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Out</title>
+    <link rel="stylesheet" href="style_signout.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i> Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+        </ul>
+    </div>
+
+    <div id="signout-container">
+        <h2>Are you sure you want to sign out?</h2>
+        <p>If you sign out, you will need to log in again to access the homepage.</p>
+        <button onclick="signOut()">Sign Out</button>
+        <button onclick="window.location.href='homepage.html'">Cancel</button>
+    </div>
+
+    <script src="signout.js"></script>
+</body>
+</html>

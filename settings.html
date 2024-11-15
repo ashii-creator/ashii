@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="style_settings.css">
+</head>
+<body>
+     <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i> Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Settings Container -->
+    <div id="settings-container">
+        <h1>Settings</h1>
+        
+        <!-- Account Information Section -->
+        <div class="settings-section">
+            <a href="account_info.html" class="settings-link">
+                <span class="settings-icon">👤</span>
+                <span class="settings-text">change account username</span>
+            </a>
+        </div>
+
+        <!-- Delete Account Section -->
+        <div class="settings-section">
+            <a href="delete_account.html" class="settings-link">
+                <span class="settings-icon">🗑️</span>
+                <span class="settings-text">Delete Account</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

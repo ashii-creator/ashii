@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style_homepage.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i> Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+    
+    <!-- Homepage Content -->
+    <div id="main-content">
+        <h2>Welcome to the Homepage</h2>
+        
+        <!-- Create Post Button -->
+        <button id="create-post-button" onclick="window.location.href='create-post.html'">Create Post</button>
+        
+        <!-- Display Posts Here -->
+        <div id="posts-container">
+            <!-- Posts will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="homepage.js"></script>
+    <script>
+        // JavaScript function for search functionality
+        function searchUser() {
+            // Get the username from the search bar
+            const username = document.getElementById('search-bar').value.trim();
+            
+            // If the input is not empty
+            if (username) {
+                // Construct the profile URL based on the username
+                const profileUrl = `profile.html?username=${encodeURIComponent(username)}`;
+                
+                // When the search button is clicked, navigate to the user's profile page
+                document.getElementById('search-button').onclick = function() {
+                    window.location.href = profileUrl;
+                };
+            }
+        }
+    </script>
+</body>
+</html>

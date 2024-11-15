@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F8FA;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1DA1F2;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li a:hover {
+    background-color: #198BB9;
+    border-radius: 5px;
+}
+
+/* Profile Section */
+#profile-container {
+    margin-left: 270px; /* Space for the sidebar */
+    padding: 40px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+#profile-background {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+#profile-background #background-img {
+    width: 100%;
+    height: auto;
+}
+
+#profile-picture {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    background-color: white;
+}
+
+#profile-picture #profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Upload Buttons */
+#upload-buttons {
+    margin-top: 30px;
+}
+
+#upload-buttons button {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+#upload-buttons button:hover {
+    background-color: #198BB9;
+}
+
+#upload-buttons input[type="file"] {
+    display: none;
+}
+
+/* Profile Info Section */
+#profile-info {
+    margin-top: 80px;
+}
+
+#profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#profile-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#edit-bio-btn {
+    font-size: 16px;
+    color: #1DA1F2;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#bio-input, #save-bio-btn {
+    display: none;
+}
+
+#save-bio-btn {
+    font-size: 16px;
+    padding: 8px 15px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#save-bio-btn:hover {
+    background-color: #198BB9;
+}
+
+/* User's Posts */
+#profile-posts-container {
+    margin-top: 40px;
+    text-align: left;
+}
+
+#profile-posts-container h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    background-color: #f7f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #profile-container {
+        margin-left: 220px;
+    }
+
+    #profile-info h2 {
+        font-size: 20px;
+    }
+
+    #profile-info p {
+        font-size: 14px;
+    }
+
+    #profile-posts-container h3 {
+        font-size: 18px;
+    }
+}

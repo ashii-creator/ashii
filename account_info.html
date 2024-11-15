@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Information</title>
+    <link rel="stylesheet" href="style_account_info.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i> 🏠Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <div class="account-info-container">
+        <h2>change username</h2>
+        
+        <!-- Username Display and Editable Field -->
+        <div class="info-section">
+            <label for="username">Username:</label>
+            <input type="text" id="username-input" placeholder="Enter your username">
+        </div>
+        
+        <!-- Email Display (Non-editable) -->
+        <div class="info-section">
+            <label for="email">Email:</label>
+            <p id="email-display"></p> <!-- Static display for email -->
+        </div>
+        
+        
+        <!-- Save Changes Button -->
+        <button onclick="saveAccountInfo()">Save Account Information</button>
+    </div>
+
+    <script src="account_info.js"></script>
+</body>
+</html>

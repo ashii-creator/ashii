@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="style_create_post.css">
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><a href="homepage.html"><i class="fa fa-home"></i> 🏠Home</a></li> <!-- Home Link in Sidebar -->
+            <li><a href="profile.html">👤Profile</a></li>
+            <li><a href="settings.html" id="settings-link">⚙️ Settings</a></li>
+            <li><a href="sign-out.html">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <div class="create-post-container">
+        <h2>Create a New Post</h2>
+        <form id="create-post-form" onsubmit="return submitPost()">
+            <!-- No need for username input; it will be automatically filled -->
+            <textarea id="post-content" rows="4" placeholder="What's on your mind?" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+
+    <script src="create-post.js"></script>
+</body>
+</html>
